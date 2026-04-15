@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Note App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="header-left">
+                <img src="https://cdn-icons-png.flaticon.com/512/762/762686.png" alt="App Logo" class="logo-img">
+                <h1>Pro Notes</h1>
+            </div>
+            <button id="add-note-btn" class="add-btn">+ Add Note</button>
+        </header>
+
+        <div id="empty-state" class="empty-state">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-state-2130362-1800926.png"
+                alt="No notes" class="empty-img">
+            <p>You don't have any notes yet. Click "+ Add Note" to get started!</p>
+        </div>
+
+        <div id="notes-container" class="notes-container"></div>
+    </div>
+
+    <!-- IMAGE PREVIEW MODAL (Hidden by default) -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
